@@ -1,4 +1,6 @@
-<b> The Music Player - Front End Project <b/> <br/>
+**The Music Player - Front End Project** <br/><br/>
+<br/>
+![Music-Player GIF](https://github.com/mohitrajputt/The-Music-Player/blob/1643dba77630ce3d27bef2556c431afb1b311696/ss/GIF-min.gif)  <br/><br/>
 Here, You can see screenshots of this project <br/> 
 S-01
 <br/> <br/>
