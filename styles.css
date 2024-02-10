@@ -1,0 +1,547 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+:root {
+  --Light-Lavender: #e6e6fa;
+  /* bg */
+  --sub-color-bg: #c0c0c0;
+  --Charcoal: #333333;
+  /* text */
+  --midnight-blue-bg: #1a1e45;
+  --dark-blueish-gray-bg: #0f1524;
+  --royal-blue-bg: #455fb1;
+  --alice-blue-font: #f0f8ff;
+  --snow-white-font: #fffafa;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--Light-Lavender);
+  box-sizing: border-box;
+  color: var(--Charcoal);
+}
+
+/*  Style for nav bar  */
+
+.spotify-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 12px 62px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--Light-Lavender);
+}
+
+.left-container-In-nav,
+.right-container-In-nav {
+  display: flex;
+  align-items: center;
+}
+
+/* css for left container in nav bar */
+
+.product-name p {
+  margin: 0 18px;
+}
+
+.favourite-songs {
+  margin-left: 24px;
+}
+
+.favourite-songs a {
+  text-decoration: none;
+  /* color: var(--alice-blue-font); */
+  color: black;
+}
+
+#color-light {
+  /* color: var(--alice-blue-font); */
+  font-size: large;
+}
+
+#color-dark {
+  /* color: var(--snow-white-font); */
+  font-size: large;
+  font-family: "Roboto Mono", monospace;
+  font-weight: bold;
+}
+
+#logo {
+  width: 70px;
+  height: auto;
+}
+
+/* css for right container in nav bar */
+
+.search-songs {
+  margin: 0px 24px;
+}
+
+.notification {
+  margin-right: 24px;
+}
+
+.user-icon img {
+  width: 40px;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* .search-songs input:focus::placeholder {
+  color: transparent;
+} */
+
+/* End of navbar  */
+
+/* main */
+
+.spotify-main-music {
+  display: inline-block;
+  width: 70%;
+  box-sizing: border-box;
+  padding: 10px 70px;
+}
+
+/* this one is the first section inside main content : Trending music slider */
+
+.trending-music {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  /* overflow: hidden; */
+}
+
+.slide-show {
+  width: 100%;
+  height: auto;
+}
+
+.slide-show:hover {
+  cursor: pointer;
+}
+
+.trending-music-slide-1 {
+  background: url(img/trending-01.webp) no-repeat center;
+  background-size: contain;
+}
+
+.trending-music-slide-2 {
+  background: url(img/trending-02.webp) no-repeat center;
+  background-size: contain;
+}
+
+.trending-music-slide-3 {
+  background: url(img/trending-03.webp) no-repeat center;
+  background-size: contain;
+}
+
+/*  This one is the second section inside main content : Latest released musics */
+
+.latest-release-section {
+  width: 100%;
+  height: 300px;
+}
+
+.section-heading {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.3rem;
+}
+
+.latest-release-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.latest-release {
+  display: flex;
+  align-items: center;
+  width: 350px;
+  margin: 8px 18px 8px 0px;
+  overflow: hidden;
+}
+
+.latest-release img {
+  width: 100px;
+}
+
+.button {
+  display: flex;
+  box-sizing: border-box;
+  padding-right: 8px;
+  position: relative;
+  top: -35px;
+  left: -10px;
+}
+
+.button div {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: black;
+  margin: 2px;
+}
+
+.after::after {
+  content: "04:44";
+  position: relative;
+  top: 12px;
+  right: 25px;
+}
+
+/* This is third section for popular artist */
+
+.popular-artist-section {
+  width: 100%;
+  height: 200px;
+}
+
+.popular-artist-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.popular-artist {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  margin: 0px 8px;
+}
+
+.arjit {
+  background: url(img/Artist-Arjit.webp) center;
+  background-size: cover;
+}
+
+.badshah {
+  background: url(img/Artist-badsha.webp) center;
+  background-size: cover;
+}
+
+.yoyo {
+  background: url(img/Artist-YoYo.webp) center;
+  background-size: cover;
+}
+
+.pritam {
+  background: url(img/artist-pritam.webp) center;
+  background-size: cover;
+}
+
+.sonu {
+  background: url(img/Artist-Sonu.webp) center;
+  background-size: cover;
+}
+
+/* Playstation section[ 4th ] inside main section  */
+
+.play-station-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 150px;
+  margin: 24px 0px;
+  padding: 18px;
+  box-sizing: border-box;
+  background-color: var(--sub-color-bg);
+}
+
+.play-station-container {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  margin: 0px 4px;
+}
+
+.play-station-container:hover {
+  cursor: pointer;
+}
+
+.play-station {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+}
+
+.play-station-inner-layer {
+  width: 140px;
+  height: 60px;
+  position: absolute;
+  margin: auto;
+  background-color: yellow;
+}
+
+.play-station-mid-layer {
+  width: 120px;
+  height: 80px;
+  position: absolute;
+  margin: auto;
+  background-color: darkgoldenrod;
+}
+
+.play-station-upper-layer {
+  width: 100px;
+  height: 110px;
+  position: absolute;
+  margin: auto;
+  background: url(img/Station-icon.jpg) no-repeat;
+  background-size: 100px;
+  background-color: #ffb902;
+}
+
+.playlist-01 {
+  background: url(img/playlist-1.png) center;
+}
+
+.playlist-02 {
+  background: url(img/playlist-2.jpg) center;
+}
+
+.playlist-03 {
+  background: url(img/playlist-3.jpg) center;
+}
+
+.playlist-04 {
+  background: url(img/playlist-4.jpg) center;
+}
+
+.playlist-05 {
+  background: url(img/playlist-5.jpg) center;
+}
+
+.playlist-06 {
+  background: url(img/playlist-6.jpg) center;
+}
+
+/* music category section */
+
+.music-category-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 200px;
+}
+
+.music-category-container {
+  width: 250px;
+  height: 150px;
+  color: transparent;
+}
+
+.music-category-container p {
+  position: relative;
+  top: 50%;
+  text-align: center;
+  font-size: larger;
+}
+
+.music-category-container:hover {
+  background-size: 400px 200px;
+  opacity: 0.8;
+  color: white;
+  cursor: pointer;
+}
+
+.Party {
+  background: url(img/Playlist_party.jpg) center;
+  background-size: 300px 150px;
+  transition: all 0.5s;
+}
+
+.Electronic {
+  background: url(img/Playlist_electronic.jpg) center;
+  background-size: 300px 150px;
+  transition: all 0.5s;
+}
+
+.Roadtrip {
+  background: url(img/Playlist_roadtrip.jpg) center;
+  background-size: 300px 150px;
+  transition: all 0.5s;
+}
+
+/* latest english music section */
+
+/*  css is common for latest hinde or english */
+
+.latest-music {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 150px;
+  margin-bottom: 50px;
+}
+
+.latest-music-container {
+  width: 100px;
+  height: 120px;
+}
+
+.latest-music-container p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  position: relative;
+  top: 125px;
+  font-size: smaller;
+}
+
+#LMC-e1 {
+  background: url(img/english-01.webp) center;
+  background-size: cover;
+}
+
+#LMC-e2 {
+  background: url(img/english-02.webp) center;
+  background-size: cover;
+}
+
+#LMC-e3 {
+  background: url(img/english-03.webp) center;
+  background-size: cover;
+}
+
+#LMC-e4 {
+  background: url(img/english-04.webp) center;
+  background-size: cover;
+}
+
+#LMC-e5 {
+  background: url(img/english-05.webp) center;
+  background-size: cover;
+}
+
+#LMC-e6 {
+  background: url(img/english-06.webp) center;
+  background-size: cover;
+}
+
+#LMC-h1 {
+  background: url(img/hinde-01.webp) center no-repeat;
+  background-size: cover;
+}
+
+#LMC-h2 {
+  background: url(img/hinde-02.webp) center;
+  background-size: cover;
+}
+
+#LMC-h3 {
+  background: url(img/hinde-03.webp) center;
+  background-size: cover;
+}
+
+#LMC-h4 {
+  background: url(img/hinde-07.webp) center;
+  background-size: cover;
+}
+
+#LMC-h5 {
+  background: url(img/hinde-05.webp) center;
+  background-size: cover;
+}
+
+#LMC-h6 {
+  background: url(img/hinde-06.webp) center;
+  background-size: cover;
+}
+
+/* aside */
+
+.spotify-aside-playlist {
+  display: inline-block;
+  width: 30%;
+  height: 100%;
+  position: fixed;
+  overflow: scroll;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+  position: sticky;
+  top: 0;
+  background-color: #c0c0c0;
+}
+
+#queuelist {
+  display: none;
+}
+
+/* #queuelist[type="checkbox"]:checked ~ i{
+  color: red;
+} */
+
+.heading select {
+  background-color: transparent;
+  border: none;
+}
+
+.song-container {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.song-container:hover {
+  background-color: #c0c0c0;
+  cursor: pointer;
+}
+
+.song-container:active {
+  opacity: 0.5;
+}
+
+.song-container img {
+  width: 50px;
+  padding: 4px;
+  box-sizing: border-box;
+}
+
+span p {
+  margin: 0px 10px;
+}
+
+.title {
+  width: 50%;
+  margin: 0px 30px 0px 15px;
+}
+
+.title h4,
+p {
+  margin: 0;
+}
+
+.title p {
+  font-size: 0.75rem;
+}
+
+/* it will fix */
+.temp {
+  height: 100px;
+}
+
+/* Completed Phase two [Aside] */
+
+.music-player {
+  display: none;
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+}
+
+.music-player audio {
+  width: 100%;
+}
