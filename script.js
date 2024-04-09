@@ -1,3 +1,5 @@
+alert('This Website only for desktop view');
+
 function playlist() {
   window.location.href = "playlist.html";
 }
